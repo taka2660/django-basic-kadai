@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>商品詳細</title>
+</head>
+<body>
+    <h1>商品詳細</h1>
+    <table>
+        <tr>
+            <th>商品名</th>
+            <td>{{ object.name }}</td>
+        </tr>
+        <tr>
+            <th>価格</th>
+            <td>{{ object.price }} 円</td>
+        </tr>
+    </table>
+    <a href="{% url 'product-list' %}">戻る</a>
+</body>
+</html>
